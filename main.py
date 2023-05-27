@@ -1,7 +1,3 @@
-#https://www.thepythoncode.com/article/automate-login-to-websites-using-selenium-in-python
-#https://chercher.tech/python/assertion-unittest-python-selenium
-#https://www.parsehub.com/blog/what-is-web-scraping/
-
 from selenium import webdriver
 import unittest
 from selenium.webdriver.common.by import By
@@ -30,8 +26,6 @@ class CookieClickerTest(unittest.TestCase):
         #self.search_box.submit()
 
         # Get the list of search results
-        #lists = self.driver.find_elements(By.LINK_TEXT, '0 cookies - Cookie Clicker - Orteil')
-        #no = len(lists)
         #self.assertEqual(1, len(lists))
         #searchresult = self.driver.find_elements(By.CSS_SELECTOR, "#search > div:nth-child(1)")
         #expectedlink = "https://www.instagram.com/?hl=id"
@@ -59,8 +53,6 @@ class CookieClickerTest(unittest.TestCase):
         sleep(9)
 
         # Navigate to the Messages Page
-        #self.message = self.driver.find_element(By.CLASS_NAME, '_aacl _aacp _adda _aacx _aada')
-        #self.message.click()
         self.driver.get('https://www.instagram.com/direct/inbox/')
 
         #Not Now for Notifications
@@ -75,13 +67,3 @@ class CookieClickerTest(unittest.TestCase):
 if __name__ == "__main__":
     unittest.main()
 
-#1. test search by text
-#2. test login on the homepage
-#3. test send message
-#    a. Messages
-#       > New Message
-#         > Type name
-#           > Type text message
-#           > send
-# https://medium.com/analytics-vidhya/making-an-instagram-bot-using-selenium-and-python-ea94f217d0dd
-# https://www.datacamp.com/tutorial/git-push-pull
